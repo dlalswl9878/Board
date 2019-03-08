@@ -22,7 +22,6 @@ public class BoardController {
 	@Inject
 	private BoardService service;
 	
-	
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public void registerGET(BoardVO board, Model model) throws Exception {
 		
@@ -41,7 +40,6 @@ public class BoardController {
 		rttr.addFlashAttribute("msg", "success");
 		
 		//return "/board/success";
-		//게시글 도배 방지를 위한 리다이렉트 방식
 		return "redirect:/board/listAll";
 	}
 	

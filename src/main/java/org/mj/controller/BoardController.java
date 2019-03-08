@@ -24,14 +24,12 @@ public class BoardController {
 	
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public void registerGET(BoardVO board, Model model) throws Exception {
-		
 		logger.info("register get .........");
 		
 	}
 	
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public String registerPOST(BoardVO board, RedirectAttributes rttr) throws Exception {
-		
 		logger.info("register post .........");
 		logger.info(board.toString());
 		
